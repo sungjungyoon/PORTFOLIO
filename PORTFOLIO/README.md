@@ -1,19 +1,19 @@
 # One page Portfolio Website (HTML CSS Project for Ppractice)
-![Watch Now](./img/Design.jpg)
-## Watch The Complete Tutorial ![YouTube Video Views](https://img.shields.io/youtube/views/ZFQkb26UD1Y?style=social) : https://youtu.be/ZFQkb26UD1Y   
+!(./img/new-york-g1a022a734_1920.jpg)
 
 
-This project is for html &amp; css practice. We made this for youtube tutorial purpose.
-<b>coded by [Shaif Arfan](https://github.com/shaifarfan)</b>
+
+Hello! Simple clone coding and portfolio production
+<b>안녕하세요! 간단한 클론코딩과 포트폴리오 제작중입니다.</b>
 
 
 ## Similar Projects/turorials
 
- - [Amy's Portfolio - (html, css project)](https://github.com/ShaifArfan/AMYs-Portfolio)
- - [Ayans's Profolio - (react.js project)](https://github.com/ShaifArfan/AYANs-portfolio)
+ - [sungjungyoon's Portfolio - (html, css project)](https://github.com/sungjungyoon/)
+ 
   
 
 ### 👍 HAVE FUN 👍
-Thanks, Arfan
+Thanks, YOONSUNGJUNG
 
 
