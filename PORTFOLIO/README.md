@@ -1,5 +1,5 @@
-# One page Portfolio Website (HTML CSS JS(vanilla) Project)
-!(./img/architecture-g8e6609d72_1920.jpg)
+# One page Portfolio Website (HTML CSS Project for Ppractice)
+!(../img/architecture-g8e6609d72_1920.jpg)
 
 
  

@@ -205,7 +205,7 @@ li{
 
 /* Hero Section */
 #hero {
-	background-image: url(./img/hero-bg.png);
+	background-image: url(./img/home-background.png);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -348,7 +348,9 @@ li{
 .about-img02 h1{position:absolute;color:#ddd;right:-97px;bottom:85px;transform:rotate(-90deg);font-size:5rem;}
 .about-img02{margin-bottom:50px;}
 .icd-list{display:flex;flex-flow:row wrap;color:white;font-weight:500;font-size:1.6rem;}
-.icd-list li p{color:#ddd;}
+.icd-list li{font-weight:bold;font-size:3rem;}
+.icd-list li p{color:#ddd;font-size:1.5rem;}
+.icd-list li p img{background-color:#999;}
 .icd-list li:first-child{width:50%;}
 .icd-list li:nth-child(2){width:50%;}
 .icd-list li:nth-child(3){width:100%;}
