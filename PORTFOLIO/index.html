@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
-  
+  <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <title>YSJ PortFolio</title>
 
 </head>
@@ -39,8 +41,6 @@
       </div>
     </section>
     <!-- End Header -->
-
-
     <!-- Hero Section  -->
     <section id="hero">
       <div class="hero container">
@@ -99,67 +99,65 @@
       </div>
     </section>
     <!-- End About Section -->
-
-        <!-- Service Section -->
-        <section id="services">
-          <div class="services container">
-            <div class="services-top-img">
-              <img src="./img/icando-top.png" alt="">
+    <!-- Service Section -->
+    <section id="services">
+      <div class="services container">
+        <div class="services-top-img">
+          <img src="./img/icando-top.png" alt="">
+        </div>
+        <div class="service-top">
+          <h1 class="section-title">I CAN DO</h1>
+          <p>웹 디자인&퍼블리싱,영상편집을 할 수 있습니다!</p>
+        </div>
+        <div class="service-bottom">
+          <div class="service-item">
+            <div class="icon-list i-l01">
+              <div class="icon"><img src="./img/html.png" /></div>
+              <div class="icon"><img src="./img/css.png" /></div>
+              <div class="icon"><img src="./img/js.png" /></div>
+              <div class="icon"><img src="./img/jquery.png" /></div>
             </div>
-            <div class="service-top">
-              <h1 class="section-title">I CAN DO</h1>
-              <p>웹 디자인&퍼블리싱,영상편집을 할 수 있습니다!</p>
-            </div>
-            <div class="service-bottom">
-              <div class="service-item">
-                <div class="icon-list i-l01">
-                  <div class="icon"><img src="./img/html.png" /></div>
-                  <div class="icon"><img src="./img/css.png" /></div>
-                  <div class="icon"><img src="./img/js.png" /></div>
-                  <div class="icon"><img src="./img/jquery.png" /></div>
-                </div>
-                <h2>Web Design & Publish</h2>
-                <p>기초 웹구성에 있어 가장 중요한 HTML5와 CSS3로 기본적인 메커니즘 이해와 더불어 
-                  응용능력 또한 갖춘 상태 입니다. 또한 Javascript와 Jquery를 이용해 역동적인 웹브라우저를
-                  만들 수 있습니다. 
-                </p>
-              </div>
-              <div class="service-item">
-                <div class="icon-list i-l02">
-                  <div class="icon"><img src="./img/youtube.png" /></div>
-                  <div class="icon"><img src="./img/moviecut.png" /></div>
-                  <div class="icon"><img src="./img/entertain.png" /></div>
-                </div>
-                <h2>MEDIA</h2>
-                <p>영상제작&편집에 필수툴인 PremierPro와 AfterEffect를 연동하여 사용 가능합니다. 또한 최신 유행하는 폰트,톤앤무드 등을 꾸준히 연구하고 학습하고 있습니다.</p>
-              </div>
-              <div class="service-item">
-                <div class="icon-list i-l03">
-                  <div class="icon"><img src="./img/Photoshop.png" /></div>
-                  <div class="icon"><img src="./img/Illustor.png" /></div>
-                  <div class="icon"><img src="./img/Premierpro.png" /></div>
-                  <div class="icon"><img src="./img/Aftereffect.png" /></div>
-                </div>
-                <h2>USE TOOL</h2>
-                <p>제가 사용하고 있는 툴입니다. 웹 에디터로는 주로 visual studio codes를 이용하며 매니지먼트는 github으로 통합관리하고 있습니다.
-                  웹이나 영상이나 많이 사용될 Img파일은 편집과 보정이 원활하게 가능하며 Media자료 같은 경우 컷편집,이펙트 효과,자막 활용 등 모든 툴과 연계하여 가능합니다. 
-                </p>
-              </div>
-              <div class="service-item">
-                <div class="icon-list i-l04">
-                  <div class="icon"><img src="./img/visualstudiocodes.png" /></div>
-                  <div class="icon"><img src="./img/github.png" /></div>
-                </div>
-                <h2>USE TOOL</h2>
-                <p>제가 사용하고 있는 툴입니다. 웹 에디터로는 주로 visual studio codes를 이용하며 매니지먼트는 github으로 통합관리하고 있습니다.
-                  웹이나 영상이나 많이 사용될 Img파일은 편집과 보정이 원활하게 가능하며 Media자료 같은 경우 컷편집,이펙트 효과,자막 활용 등 모든 툴과 연계하여 가능합니다. 
-                </p>
-              </div>
-            </div>
+            <h2>Web Design & Publish</h2>
+            <p>기초 웹구성에 있어 가장 중요한 HTML5와 CSS3로 기본적인 메커니즘 이해와 더불어 
+              응용능력 또한 갖춘 상태 입니다. 또한 Javascript와 Jquery를 이용해 역동적인 웹브라우저를
+              만들 수 있습니다. 
+            </p>
           </div>
-        </section>
-        <!-- End Service Section -->
-
+          <div class="service-item">
+            <div class="icon-list i-l02">
+              <div class="icon"><img src="./img/youtube.png" /></div>
+              <div class="icon"><img src="./img/moviecut.png" /></div>
+              <div class="icon"><img src="./img/entertain.png" /></div>
+            </div>
+            <h2>MEDIA</h2>
+            <p>영상제작&편집에 필수툴인 PremierPro와 AfterEffect를 연동하여 사용 가능합니다. 또한 최신 유행하는 폰트,톤앤무드 등을 꾸준히 연구하고 학습하고 있습니다.</p>
+          </div>
+          <div class="service-item">
+            <div class="icon-list i-l03">
+              <div class="icon"><img src="./img/Photoshop.png" /></div>
+              <div class="icon"><img src="./img/Illustor.png" /></div>
+              <div class="icon"><img src="./img/Premierpro.png" /></div>
+              <div class="icon"><img src="./img/Aftereffect.png" /></div>
+            </div>
+            <h2>USE TOOL</h2>
+            <p>제가 사용하고 있는 툴입니다. 웹 에디터로는 주로 visual studio codes를 이용하며 매니지먼트는 github으로 통합관리하고 있습니다.
+              웹이나 영상이나 많이 사용될 Img파일은 편집과 보정이 원활하게 가능하며 Media자료 같은 경우 컷편집,이펙트 효과,자막 활용 등 모든 툴과 연계하여 가능합니다. 
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="icon-list i-l04">
+              <div class="icon"><img src="./img/visualstudiocodes.png" /></div>
+              <div class="icon"><img src="./img/github.png" /></div>
+            </div>
+            <h2>USE TOOL</h2>
+            <p>제가 사용하고 있는 툴입니다. 웹 에디터로는 주로 visual studio codes를 이용하며 매니지먼트는 github으로 통합관리하고 있습니다.
+              웹이나 영상이나 많이 사용될 Img파일은 편집과 보정이 원활하게 가능하며 Media자료 같은 경우 컷편집,이펙트 효과,자막 활용 등 모든 툴과 연계하여 가능합니다. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Service Section -->
     <!-- Projects Section -->
     <section id="projects">
       <div class="projects container">
@@ -191,9 +189,7 @@
             <div class="project-info">
               <h1>HANSOL</h1>
               <h2>#클론코딩#반응형#제작기간 3일</h2>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-                rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-                harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+              <p>처음으로 제작한 반응형 웹페이지 입니다.실무에서 여전히 많이 쓰이는 Clearfix를 이용한 float 위주로 레이아웃을 잡았습니다. 끊임없이 컨텐츠 내용이 바뀌는 사이트 특성상 정확한 레이아웃을 잡으려 노력했으며, 시안을 토대로 정확한 퍼센트 기준으로 작성하였습니다. </p>
             </div>
             <div class="project-img">
               <img src="./img/hansol-logo.jpg" alt="img">
@@ -203,9 +199,7 @@
             <div class="project-info">
               <h1>HOLLYS</h1>
               <h2>#클론코딩#반응형#제작기간 10일</h2>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-                rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-                harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+              <p>처음으로 제작한 반응형 웹페이지 입니다.실무에서 여전히 많이 쓰이는 Clearfix를 이용한 float 위주로 레이아웃을 잡았습니다. 끊임없이 컨텐츠 내용이 바뀌는 사이트 특성상 정확한 레이아웃을 잡으려 노력했으며, 시안을 토대로 정확한 퍼센트 기준으로 작성하였습니다.</p>
             </div>
             <div class="project-img">
               <img src="./img/hollys-logo.jpg" alt="img">
@@ -213,20 +207,68 @@
           </div>
           <div class="project-item">
             <div class="project-info">
-              <h1>Project 5</h1>
-              <h2>Coding is Love</h2>
+              <h1>INDIGO.</h1>
+              <h2>#반응형#제작기간5일</h2>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
                 rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
                 harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
             </div>
             <div class="project-img">
-              <img src="./img/img-1.png" alt="img">
+              <img src="./img/indigo.jpg" alt="img">
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- End Projects Section -->
+    <section id="projects02">
+      <section class="swiper">
+        <div class="txt-box">
+        <h1>WHAT I DID</h1>
+        <p>My motto is stick to the basics!</p>
+        <p>사소한 1Frame,1Px 단위가 쌓이고 쌓여 전체 퀄리티를 결정짓는 것이라 생각합니다.제 영상을 시청하는 대상에 어설픈 화려함 보다 완벽한 기본을 보여주려 합니다.
+        </p>
+        </div> 
+        <div class="swiper-wrapper">
+            <div class="swiper-slide megabox">
+                <div class="inner-box">
+                    <div class="img-box">
+                        <img src="./img/lam-cf2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide hansol">
+                <div class="inner-box">
+                    <div class="img-box">
+                        <img src="./img/ACDC.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide hollys">
+                <div class="inner-box">
+                    <div class="img-box">
+                        <img src="./img/cu3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide indio">
+                <div class="inner-box">
+                    <div class="img-box">
+                        <img src="./img/filite.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide tourlist">
+                <div class="inner-box">
+                    <div class="img-box">
+                        <img src="./img/hollys-cf.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
+    </section>
 
 
 
@@ -269,7 +311,7 @@
     <section id="footer">
       <div class="footer container">
         <div class="brand">
-          <h1><span>S</span>haif <span>A</span>rfan</h1>
+          <h1>저를 조금 더 보고 싶으시다구요?</h1>
         </div>
         <h2>Your Complete Web Solution</h2>
         <div class="social-icon">
@@ -286,7 +328,7 @@
             <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
           </div>
         </div>
-        <p>Copyright © 2020 Arfan. All rights reserved</p>
+        <p>비상업용 웹사이트 입니다. 저작권은 개뿔 없습니다!</p>
       </div>
     </section>
   </div>

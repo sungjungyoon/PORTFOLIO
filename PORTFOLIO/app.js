@@ -23,3 +23,39 @@ menu_item.forEach((item) => {
 		mobile_menu.classList.toggle('active');
 	});
 });
+	$(function(){
+		var swiper = new Swiper(".swiper", {
+			slidesPerView: 1,
+			breakpoints: {
+				// when window width is >= 320px
+				320: {
+				  slidesPerView: 2,
+				  spaceBetween: 20
+				},
+				// when window width is >= 480px
+				480: {
+				  slidesPerView: 3,
+				  spaceBetween: 30
+				},
+				// when window width is >= 640px
+				640: {
+				  slidesPerView: 2,
+				  spaceBetween: 600
+				}
+			  },
+			effect: 'creative',
+				creativeEffect: {
+					prev: {
+					// will set `translateZ(-400px)` on previous slides
+					translate: [0, 0, -400],
+					},
+					next: {
+					// will set `translateX(100%)` on next slides
+					translate: ['100%', 0, 0],
+					},
+					slidesPerView: 2, // 보여지는 슬라이드 수
+					spaceBetween: 50, // 슬라이드 간의 거리(px 단위)
+					loop: true, // 슬라이드 무한 반복
+				},
+			});
+	})
