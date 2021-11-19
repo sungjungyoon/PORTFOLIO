@@ -1,13 +1,14 @@
+// 전역변수
 const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
 const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
 const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
 const header = document.querySelector('.header.container');
-
+// 이벤트 토글
 hamburger.addEventListener('click', () => {
 	hamburger.classList.toggle('active');
 	mobile_menu.classList.toggle('active');
 });
-
+// 스크롤 내려올 때 색변경
 document.addEventListener('scroll', () => {
 	var scroll_position = window.scrollY;
 	if (scroll_position > 250) {
@@ -25,24 +26,7 @@ menu_item.forEach((item) => {
 });
 	$(function(){
 		var swiper = new Swiper(".swiper", {
-			slidesPerView: 1,
-			breakpoints: {
-				// when window width is >= 320px
-				320: {
-				  slidesPerView: 2,
-				  spaceBetween: 20
-				},
-				// when window width is >= 480px
-				480: {
-				  slidesPerView: 3,
-				  spaceBetween: 30
-				},
-				// when window width is >= 640px
-				640: {
-				  slidesPerView: 2,
-				  spaceBetween: 600
-				}
-			  },
+		
 			effect: 'creative',
 				creativeEffect: {
 					prev: {
