@@ -17,29 +17,33 @@ document.addEventListener('scroll', () => {
 		header.style.backgroundColor = 'transparent';
 	}
 });
-
+// 햄버거 토글
 menu_item.forEach((item) => {
 	item.addEventListener('click', () => {
 		hamburger.classList.toggle('active');
 		mobile_menu.classList.toggle('active');
 	});
 });
-	$(function(){
-		var swiper = new Swiper(".swiper", {
-		
-			effect: 'creative',
-				creativeEffect: {
-					prev: {
-					// will set `translateZ(-400px)` on previous slides
-					translate: [0, 0, -400],
-					},
-					next: {
-					// will set `translateX(100%)` on next slides
-					translate: ['100%', 0, 0],
-					},
-					slidesPerView: 2, // 보여지는 슬라이드 수
-					spaceBetween: 50, // 슬라이드 간의 거리(px 단위)
-					loop: true, // 슬라이드 무한 반복
+// 스와이퍼 기능
+
+		var swiper = new Swiper(".swiper01", {
+			pagination: {
+			  el: ".swiper-pagination",
+			  clickable: true,
+			},
+			breakpoints: {
+				640: {
+				  slidesPerView: 1,
+				  spaceBetween: 20,
 				},
-			});
-	})
+				768: {
+				  slidesPerView: 1,
+				  spaceBetween: 20,
+				},
+				1200: {
+				  slidesPerView: 3,
+				  spaceBetween: 30,
+				},
+			},
+		  });
+
