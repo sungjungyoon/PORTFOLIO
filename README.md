@@ -1,5 +1,5 @@
 # One page Portfolio Website (HTML CSS Project for Ppractice)
-!(./img/acdc.jpg)
+!(./img/acdc.png)
 
 
  
