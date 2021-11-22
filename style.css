@@ -52,14 +52,14 @@ li{
 
 .cta {
 	display: inline-block;
-	padding: 10px 30px;
+	padding:8px 50px;
 	color: white;
 	background-color: transparent;
 	border: 2px solid #ddd;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
-	margin-top: 30px;
+	margin-top: 25px;
 	transition: 0.3s ease;
 	transition-property: background-color, color;
 }
@@ -96,8 +96,10 @@ li{
 	justify-content: space-between;
 	width: 100%;
 	height: 100%;
-	max-width: 90vw;
-	
+	max-width: 95vw;
+}
+#header .nav-bar h1{
+	font-size:2.5rem;
 }
 #header .nav-list ul {
 	list-style: none;
@@ -242,22 +244,25 @@ li{
 }
 #hero h1:nth-child(1) {
 	margin-bottom:10px;
+	font-size:3rem;
 	animation-delay: 1s;
 }
 #hero h1:nth-child(2) {
 	margin-left:5px;
-	font-size:2rem;
+	font-size:1.5rem;
+	margin-bottom:5px;
 	animation-delay: 2s;
 }
 #hero h1:nth-child(3) {
 	margin-left:5px;
-	font-size:2rem;
+	font-size:1.5rem;
+	margin-bottom:5px;
 	animation: text_reveal_name 0.5s ease forwards;
 	animation-delay: 3s;
 }
 #hero h1:nth-child(4) {
 	margin-left:5px;
-	font-size:2rem;
+	font-size:1.5rem;
 	animation: text_reveal_name 0.5s ease forwards;
 	animation-delay: 4s;
 }
@@ -293,7 +298,7 @@ li{
 	text-align: center;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 100px 50px;
+	padding: 100px 30px;
 }
 #about .col-left {
 	width: 100%;
@@ -334,7 +339,7 @@ li{
 	top:92.5%;
 	font-weight:bold;
 	color:white;
-	font-size:5rem;
+	font-size:4rem;
 }
 #about .col-left .about-img::after {
 	content: '';
