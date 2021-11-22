@@ -299,7 +299,7 @@ li{
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 75px 30px;
-	border-bottom:3px solid #ddd;
+	border-bottom:2px solid #ddd;
 }
 #about .col-left {
 	width: 100%;
@@ -380,7 +380,7 @@ li{
 	border-bottom:2px solid #ddd;
 }
 #services .services .services-top-img img{
-	width:82%;
+	width:100%;
 	height:100px;
 }
 #services .service-top {
@@ -419,7 +419,7 @@ li{
 	border:2px solid #666;
 }
 #services .service-item:hover{
-	box-shadow: 0px 0px 25px 0 white;
+	box-shadow: 0px 0px 15px 0 white;
 }
 #services .service-item::after {
 	content: '';
@@ -452,12 +452,12 @@ li{
 }
 #services .service-item h2 {
 	font-size: 2rem;
-	color: white;
+	color: #ddd;
 	margin-bottom: 10px;
 	text-transform: uppercase;
 }
 #services .service-item p {
-	color: white;
+	color: #ddd;
 	text-align: left;
 }
 /* End Services Section */
