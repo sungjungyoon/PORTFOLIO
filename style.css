@@ -377,7 +377,12 @@ li{
 	margin: 0 auto;
 	padding: 75px 0;
 	background-color:#100f0f;
-	border-bottom:2px solid #ddd;
+	border-bottom:1px solid #ddd;
+}
+#services .services::after{
+	width:100px;
+	height:100px;
+	
 }
 #services .services .services-top-img img{
 	width:100%;
@@ -463,10 +468,8 @@ li{
 /* End Services Section */
 
 /* Projects section */
-#projects .projects{
-	background-color:#100f0f;
-}
 #projects .projects {
+	background-color:#100f0f;
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -496,7 +499,7 @@ li{
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	width: 80%;
+	width: 85%;
 	margin: 20px auto;
 	overflow: hidden;
 }
