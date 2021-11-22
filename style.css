@@ -112,8 +112,8 @@ li{
 }
 #header .nav-bar h1{
 	font-size:2rem;
-	border:5px solid #ddd;
-	padding:5px 5px;
+	border:3px solid #ddd;
+	padding:6px 5px;
 }
 #header .nav-list ul {
 	list-style: none;
@@ -164,11 +164,11 @@ li{
 	color: crimson;
 }
 #header .hamburger {
-	height: 60px;
-	width: 60px;
+	height: 50px;
+	width: 50px;
 	display: inline-block;
 	border: 3px solid white;
-	border-radius: 50%;
+	/* border-radius: 50%; */
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -183,7 +183,7 @@ li{
 	content: '';
 	height: 100%;
 	width: 100%;
-	border-radius: 50%;
+	/* border-radius: 50%; */
 	border: 3px solid white;
 	animation: hamburger_puls 1s ease infinite;
 }
@@ -226,6 +226,7 @@ li{
 	background-position: top center;
 	position: relative;
 	z-index: 1;
+	background-attachment: fixed;
 }
 #hero::after {
 	content: '';
@@ -336,7 +337,7 @@ li{
 }
 #about .col-right .cta {
 	color: #ddd;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 	padding: 10px 20px;
 	font-size: 1rem;
 	border-radius:50px;
@@ -370,7 +371,7 @@ li{
 .about-img02{position: relative;margin-bottom:10px;}
 .about-img02 img{height:350px;}
 .about-img02 h1{position:absolute;color:#ddd;right:-97px;bottom:85px;transform:rotate(-90deg);font-size:5rem;}
-.about-work h2{color:#ddd;font-size:1.6rem;font-weight:500;}
+.about-work h2{color:White;font-size:1.6rem;font-weight:500;margin-bottom:10px;}
 .about-work p{color:#ddd;}
 #about .col-center .about-img02 h2{
 	position: absolute;
@@ -390,22 +391,22 @@ li{
 	text-align: center;
 	max-width: 1500px;
 	margin: 0 auto;
-	padding: 75px 0;
+	padding: 0px 0;
 	background-color:#100f0f;
-	border-bottom:1px solid #ddd;
 }
 #services .services::after{
 	width:100px;
 	height:100px;
 	
 }
+
 #services .services .services-top-img img{
 	width:100%;
 	height:100px;
 }
 #services .service-top {
 	max-width: 500px;
-	margin: 0 auto;
+	margin:30px 0;
 }
 #services .service-top h1{
 	color:#ddd;
@@ -417,12 +418,14 @@ li{
 	color:#ddd;
 	margin-top:0;
 }
+.section-sub-title{
+	display:none;
+}
 #services .service-bottom {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	margin-top: 50px;
 }
 #services .service-item {
 	flex-basis: 80%;
@@ -436,10 +439,15 @@ li{
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
-	border:2px solid #666;
+	border:2px solid #333;
 }
 #services .service-item:hover{
-	box-shadow: 0px 0px 15px 0 white;
+	box-shadow: 0px 0px 10px 0 white;
+	transition:1s ease;
+}
+#services .service-item:hover .icon img{
+	background-color:#ddd;
+
 }
 #services .service-item::after {
 	content: '';
@@ -573,13 +581,15 @@ li{
 /* End Projects section */
 /* swiper section */
 #projects02{
-	background-color: #333;
+	background-image:url(./img/woven-bg.jpg);
+	background-size:cover;
+	background-attachment: fixed;
 }
 .projects02-container{
 	
 }
 #projects02 .swiper{
-	background-color:#333;
+	
 }
 #projects02 .txt-box{
 	display:flex;
@@ -621,6 +631,8 @@ li{
 #contact{
 	background-color:#f5f5f5;
 	background-image:url(./img/contact-bg3.png);
+	background-size: cover;
+	background-attachment:fixed;
 	opacity:0.9;
 }
 #contact .contact {
@@ -789,7 +801,22 @@ li{
 	#services .service-bottom .service-item {
 		flex-basis: 45%;
 		margin: 2.5%;
-
+		/* background-size: cover; */
+		background-attachment:fixed;
+		background-size:auto;
+		background-repeat: repeat-x;
+	}
+	#services .service-bottom .service-item:nth-of-type(1){
+		background-image: url(./img/i-can-do01.png);
+	}
+	#services .service-bottom .service-item:nth-of-type(2){
+		background-image: url(./img/i-can-do02.png);
+	}
+	#services .service-bottom .service-item:nth-of-type(3){
+		background-image: url(./img/i-can-do03.png);
+	}
+	#services .service-bottom .service-item:nth-of-type(4){
+		background-image: url(./img/i-can-do04.png);
 	}
 	/* End Services Section */
 
@@ -870,9 +897,7 @@ li{
 	#projects .projects-header{
 		align-self:flex-start;
 	}
-	#projects02{
-		background-color:#333;
-	}
+
 	#projects02 .swiper{
 		margin:0 auto ;
 		display:flex;
@@ -1014,10 +1039,29 @@ li{
 		justify-content:space-between;
 	}
 	#services .services .services-top-img{
-		width:100%;
+		width:100vw;
 	}
-	#services .services .services-top-img img{
+
+	#services .services .service-top{
 		width:100%;
+		display:flex;
+		flex-flow:row ;
+		max-width:100%;
+		justify-content:space-between;
+	}
+	.service-top .section-title{
+		width:100%;
+		font-size:6rem;
+	}
+	.service-top .section-title p{
+		display: none;
+	}
+	.section-sub-title{
+		align-self:center;
+		display:block;
+		width:100%;
+		text-align:start;
+		font-size:1.3rem;
 	}
 	#services .service-bottom .service-item {
 		flex-basis: 22%;
