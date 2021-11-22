@@ -30,6 +30,7 @@ menu_item.forEach((item) => {
 			pagination: {
 			  el: ".swiper-pagination",
 			  clickable: true,
+			  type: 'bullets',
 			},
 			breakpoints: {
 				640: {
@@ -47,3 +48,22 @@ menu_item.forEach((item) => {
 			},
 		  });
 
+		//   호버 이벤트
+		$(function(){
+			$('.project-info').on({
+				'mouseenter':function(){
+					$('.project-info h1').css('color','black')
+				},
+				'mouseleave':function(){
+					$('.project-info h1').css('color','#ddd')
+				}
+			})
+		})
+
+		//   const infoBg = document.getElementsByClassName('.project-info')
+		//   const infoTxt = document.getElementsByClassName('.project-info h1')
+		  
+		//   infoBg.addEventListener('mouseenter', () => {
+		// 	hamburger.classList.toggle('active');
+		// 	mobile_menu.classList.toggle('active');
+		// });

@@ -108,10 +108,12 @@ li{
 	justify-content: space-between;
 	width: 100%;
 	height: 100%;
-	max-width: 100vw;
+	max-width: 90vw;
 }
 #header .nav-bar h1{
-	font-size:2.5rem;
+	font-size:2rem;
+	border:5px solid #ddd;
+	padding:5px 5px;
 }
 #header .nav-list ul {
 	list-style: none;
@@ -240,8 +242,8 @@ li{
 	max-width: 95vw;
 	margin: 0 auto;
 	padding: 0 50px;
-	justify-content:space-between;
-	
+	justify-content:center;
+	align-self: center;
 }
 /* hero */
 .intro-right{display:none;}
@@ -311,7 +313,7 @@ li{
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 75px 30px;
-	border-bottom:1px solid #ddd;
+
 }
 #about .col-left {
 	width: 100%;
@@ -340,6 +342,7 @@ li{
 	border-radius:50px;
 	align-self:center;
 }
+#about .about .col-right img{display:none;}
 #about .col-left .about-img {
 	height: 100%;
 	width: 100%;
@@ -364,9 +367,9 @@ li{
 	border: 7px solid crimson;
 	z-index: -1;
 }
-.about-img02{position: relative;}
+.about-img02{position: relative;margin-bottom:10px;}
+.about-img02 img{height:350px;}
 .about-img02 h1{position:absolute;color:#ddd;right:-97px;bottom:85px;transform:rotate(-90deg);font-size:5rem;}
-.about-img02{margin-bottom:50px;}
 .about-work h2{color:#ddd;font-size:1.6rem;font-weight:500;}
 .about-work p{color:#ddd;}
 #about .col-center .about-img02 h2{
@@ -760,13 +763,19 @@ li{
 		padding: 20px 60px;
 	}
 	h1.section-title {
-		font-size: 6rem;
+		font-size: 4rem;
 	}
 	/* Hero */
 	#hero .hero{justify-content:center;}
 	#hero h1 {
 		font-size: 7rem;
 	}
+	.intro-left a{
+		font-size:1.4rem;
+		padding:15px 50px;
+		margin-top:15px;
+	}
+	#about .about .col-right img{display:none;}
 	
 	/* End Hero */
 
@@ -811,11 +820,14 @@ li{
 	}
 	#about .col-left {
 		width:40%;
-		height:100%;
 		align-self:flex-start;
 	}
 	#about .col-left .about-img h1{
 		white-space:nowrap;
+	}
+	#about .col-left .about-img02 img{
+		width:auto;
+		height:100%;
 	}
 	#about .about .col-left .about-img::after {
 		left: -45px;
@@ -830,6 +842,8 @@ li{
 		width:60%;
 		text-align: left;
 		padding:0 30px;
+		margin-bottom:30px;
+		align-self:flex-start;
 	}
 	#about .col-right h1 {
 		text-align: left;
@@ -837,10 +851,15 @@ li{
 	}
 	#about .col-right .cta{
 		align-self: flex-end;
+		margin-top:0;
+		margin-bottom:0;
 	}
 	#about .col-center{
 		display: flex;
 		flex-flow:row-reverse;
+	}
+	#about .col-center .about-img02{
+		width: 100%;
 	}
 	#about .col-center .about-work{
 		align-self: center;
@@ -848,6 +867,9 @@ li{
 	}
 	/* End About */
 	/* swiper  */
+	#projects .projects-header{
+		align-self:flex-start;
+	}
 	#projects02{
 		background-color:#333;
 	}
@@ -923,13 +945,25 @@ li{
 
 	/* hero */
 	#hero .hero{justify-content:space-between;}
-	.intro-right{display:block;margin-bottom:300px;}
+	.intro-left{
+		align-self:flex-end;
+		margin-bottom:8%;
+	}
+	#hero h1:nth-of-type(1){
+		font-size:5rem;
+	}
+	#hero h1:nth-of-type(2), #hero h1:nth-of-type(3), #hero h1:nth-of-type(4){
+		font-size: 2.5rem;
+	}
+	.intro-left a{font-size:2rem;padding:5px 97px;}
+	.intro-right{
+		display:block;margin-bottom:300px;
+	}
 	.intro-right span{
 		display:block;
 		color:#ddd;
 		font-size:350px;
 		font-family:Arial, Helvetica, sans-serif;
-
 	}
 	.intro-right span:last-child{
 		position:absolute;
@@ -949,16 +983,18 @@ li{
 		height:80vh;
 	}
 	#about .col-left .about-img h1{
-		left:55px;
-		right:0;
-		top:89%;
-		font-size:7vw;
+		font-size:4vw;
 		font-weight:900;
 		white-space:nowrap;
 	}
 	#about .about .col-right{
 		width:41.92857142857%;
 		align-self:flex-start;
+	}
+	#about .about .col-right img{
+		display:block;
+		height:300px;
+		margin-top:20px;
 	}
 	#about .col-right .cta {
 		align-self: center;
@@ -968,6 +1004,9 @@ li{
 		flex-flow:column;
 		align-self: flex-start;
 		height:77%;
+	}
+	#about .about .col-center img{
+		height:631px;
 	}
 	#services .services{
 		max-width:90vw;
@@ -1014,6 +1053,8 @@ li{
 		display:flex;
 		flex-flow:row;
 		height:100vh;
+		margin:0 auto;
+		padding:100px;
 	}
 	#projects02 .txt-box{
 		justify-content:center;
@@ -1022,10 +1063,10 @@ li{
 	}
 	#projects02 .txt-box h1{
 		padding-left:0;
-		font-size:6rem;
+		font-size:4rem;
 	}
 	#projects02 .txt-box p:nth-of-type(1){
-		font-size:3rem;
+		font-size:2rem;
 		margin-top:15px;
 	}
 	#projects02 .txt-box p:nth-of-type(2){
