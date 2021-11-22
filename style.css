@@ -79,7 +79,15 @@ li{
 .brand h1 span {
 	color: crimson;
 }
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+	margin-bottom:10px;
+}
+.swiper-pagination span{
 
+	background-color:white;
+	width:10px;
+	height:10px;
+}
 /* Header section */
 #header {
 	position: fixed;
@@ -303,7 +311,7 @@ li{
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 75px 30px;
-	border-bottom:2px solid #ddd;
+	border-bottom:1px solid #ddd;
 }
 #about .col-left {
 	width: 100%;
@@ -521,6 +529,7 @@ li{
 	background-color:#dbdbdb;
 	transition:0.3s ease ;
 }
+#projects .project-info:hover .project-info>h1{color:#ddd;}
 #projects .project-info h1 {
 	color:#ddd;
 	font-size: 4rem;
@@ -577,7 +586,7 @@ li{
 	padding:0 25px;
 }
 #projects02 .txt-box h1{
-	padding:50px 50px 0 50px;
+	padding:50px 0 0 0;
 	color:#fff;
 	font-size:4rem;
 }
@@ -674,6 +683,9 @@ li{
 	flex-direction: column;
 	padding-top: 50px;
 	padding-bottom: 10px;
+}
+#footer .brand h1{
+	font-size:2.5rem;
 }
 #footer h2 {
 	color: white;
