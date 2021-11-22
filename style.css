@@ -28,7 +28,7 @@ img {
 }
 p {
 	color: black;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	margin-top: 5px;
 	line-height: 2.5rem;
 	font-weight: 300;
@@ -530,6 +530,7 @@ li{
 }
 #projects .project-info p {
 	color:#666;
+	font-size:1.2rem;
 }
 #projects .project-img {
 	flex-basis: 50%;
