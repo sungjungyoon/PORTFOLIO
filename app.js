@@ -52,7 +52,7 @@ menu_item.forEach((item) => {
 		$(function(){
 			$('.project-info').on({
 				'mouseenter':function(){
-					$('.project-info h1').css('color','black')
+					$('.project-info h1').css('color','#ddd')
 				},
 				'mouseleave':function(){
 					$('.project-info h1').css('color','#ddd')
