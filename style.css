@@ -56,16 +56,17 @@ li{
 
 .cta {
 	display: inline-block;
-	padding:8px 45px;
+	padding:8px 20px;
 	color: white;
 	background-color: transparent;
 	border: 2px solid #ddd;
 	font-size: 1.4rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
-	margin-top: 25px;
+	margin-top: 20px;
 	transition: 0.3s ease;
 	transition-property: background-color, color;
+	margin-left:4px;
 }
 .cta:hover {
 	color: white;
@@ -323,6 +324,9 @@ li{
 }
 #about .col-right {
 	width: 100%;
+}
+#about .col-right h1{
+	display: none;
 }
 #about .col-right h2 {
 	color:white;
@@ -825,6 +829,7 @@ li{
 		margin: 0;
 		width: 100%;
 		border-radius: 0;
+		border:none;
 	}
 	#projects .all-projects .project-info {
 		height: 100%;
@@ -972,11 +977,12 @@ li{
 		font-size:5rem;
 	}
 	#hero h1:nth-of-type(2), #hero h1:nth-of-type(3), #hero h1:nth-of-type(4){
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
-	.intro-left a{font-size:2rem;padding:5px 97px;}
+	.intro-left a{font-size:1.5rem;padding:5px 40px;}
 	.intro-right{
-		display:block;margin-bottom:300px;
+		display:block;
+		margin-bottom:300px;
 	}
 	.intro-right span{
 		display:block;
@@ -994,35 +1000,50 @@ li{
 	/* about */
 	#about .about{
 		max-width:90vw;
-		padding:200px 0;
+		padding:100px 0;
 		flex-flow:row nowrap;
 	}
 	#about .about .col-left{
-		width:32.42857142857%;
+		width:50%;
 		height:80vh;
+		margin-bottom:0;
 	}
 	#about .col-left .about-img h1{
 		font-size:4vw;
 		font-weight:900;
 		white-space:nowrap;
+
 	}
 	#about .about .col-right{
-		width:41.92857142857%;
-		align-self:flex-start;
+		width:50%;
+		height:80vh;
+		display:flex;
+		align-items:center;
+		justify-content: space-around;
+		background-image:url(./img/black-stone-bg.jpg);
+		background-size:auto;
+		background-attachment:fixed;
+		background-repeat: no-repeat;
+	}
+	#about .about .col-right h1{
+		display: block;
+		font-size:6rem;
+		color:#ddd;
+	}
+	#about .about .col-right h2{
+		font-size:2rem;
+	}
+	#about .about .col-right p{
+		font-size:1.2rem;
 	}
 	#about .about .col-right img{
-		display:block;
-		height:300px;
-		margin-top:20px;
+		display:none;
 	}
 	#about .col-right .cta {
-		align-self: center;
+		align-self:center;
 	}
 	#about .about .col-center{
-		width:25.71428571429%;
-		flex-flow:column;
-		align-self: flex-start;
-		height:77%;
+		display: none;
 	}
 	#about .about .col-center img{
 		height:631px;
