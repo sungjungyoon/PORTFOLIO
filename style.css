@@ -384,22 +384,24 @@ li{
 
 /* Services Section */
 #services{
+	background-image: url(./img/new-york-g1a022a734_1920.jpg);
+	background-size: cover;
+	background-attachment:fixed;
 	background-color:#100f0f;
 }
 #services .services {
+
 	flex-direction: column;
 	text-align: center;
 	max-width: 1500px;
 	margin: 0 auto;
 	padding: 0px 0;
-	background-color:#100f0f;
 }
 #services .services::after{
 	width:100px;
 	height:100px;
 	
 }
-
 #services .services .services-top-img img{
 	width:100%;
 	height:100px;
@@ -439,16 +441,13 @@ li{
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
-	border:2px solid #333;
+	border:2px solid #ddd;
 }
 #services .service-item:hover{
 	box-shadow: 0px 0px 10px 0 white;
 	transition:1s ease;
 }
-#services .service-item:hover .icon img{
-	background-color:#ddd;
 
-}
 #services .service-item::after {
 	content: '';
 	position: absolute;
@@ -543,17 +542,17 @@ li{
 #projects .project-info:hover .project-info>h1{color:#ddd;}
 #projects .project-info h1 {
 	color:#ddd;
-	font-size: 4rem;
+	font-size: 3rem;
 	font-weight: 500;
 }
 #projects .project-info h2 {
-	color:#666;
-	font-size: 1.8rem;
+	color:#999;
+	font-size: 1.5rem;
 	font-weight: 500;
 	margin-top: 10px;
 }
 #projects .project-info p {
-	color:#666;
+	color:#999;
 	font-size:1.2rem;
 }
 #projects .project-img {
@@ -581,7 +580,7 @@ li{
 /* End Projects section */
 /* swiper section */
 #projects02{
-	background-image:url(./img/woven-bg.jpg);
+	background-color:#333;
 	background-size:cover;
 	background-attachment: fixed;
 }
@@ -794,6 +793,7 @@ li{
 	/* Services Section */
 	#services .services .services-top-img{
 		margin:0 2.5%;
+
 	}
 	#services .services .services-top-img img{
 		width:100%;
@@ -807,16 +807,16 @@ li{
 		background-repeat: repeat-x;
 	}
 	#services .service-bottom .service-item:nth-of-type(1){
-		background-image: url(./img/i-can-do01.png);
+		background-image: url(./img/new-york-g1a022a734_1920.jpg);
 	}
 	#services .service-bottom .service-item:nth-of-type(2){
-		background-image: url(./img/i-can-do02.png);
+		background-image: url(./img/new-york-g1a022a734_1920.jpg);
 	}
 	#services .service-bottom .service-item:nth-of-type(3){
-		background-image: url(./img/i-can-do03.png);
+		background-image: url(./img/new-york-g1a022a734_1920.jpg);
 	}
 	#services .service-bottom .service-item:nth-of-type(4){
-		background-image: url(./img/i-can-do04.png);
+		background-image: url(./img/new-york-g1a022a734_1920.jpg);
 	}
 	/* End Services Section */
 
@@ -1036,7 +1036,7 @@ li{
 	#services .services{
 		max-width:90vw;
 		max-height:100vh;
-		justify-content:space-between;
+		justify-content:space-evenly;
 	}
 	#services .services .services-top-img{
 		width:100vw;
