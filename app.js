@@ -67,3 +67,4 @@ menu_item.forEach((item) => {
 		// 	hamburger.classList.toggle('active');
 		// 	mobile_menu.classList.toggle('active');
 		// });
+		AOS.init();
