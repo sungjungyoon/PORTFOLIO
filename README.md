@@ -1,5 +1,6 @@
 # One page Portfolio Website (HTML CSS Project for Ppractice)
-!(/img/black-and-white-g627ece5a3_1920.jpg)
+![black-and-white-g627ece5a3_1920](https://user-images.githubusercontent.com/87048278/143195474-a41228c6-6236-4a10-81ee-ac5f1c16cae2.jpg)
+
 
 
  
