@@ -1,5 +1,5 @@
 # One page Portfolio Website (HTML CSS Project for Ppractice)
-!(/img/architecture-g8e6609d72_1920.jpg)
+!(/img/black-and-white-g627ece5a3_1920.jpg)
 
 
  
