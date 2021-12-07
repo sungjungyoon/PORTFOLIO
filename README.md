@@ -1,6 +1,5 @@
 # One page Portfolio Website (HTML CSS Project for Ppractice)
-![black-and-white-g627ece5a3_1920](https://user-images.githubusercontent.com/87048278/143195474-a41228c6-6236-4a10-81ee-ac5f1c16cae2.jpg)
-
+!(../img/architecture-g8e6609d72_1920.jpg)
 
 
  
@@ -11,7 +10,6 @@ Hello! Simple clone coding and portfolio production
 ## MY Projects/list
 
  - [sungjungyoon's Portfolio - (html, css project)](https://github.com/sungjungyoon/)
- - [myPortFolio - (html,css,js,jquery,etc..)](https://sungjungyoon.github.io/PORTFOLIO/) 
  
   
 
