@@ -1,0 +1,18 @@
+@charset 'utf-8';
+        /* footer */
+        .footer{height:220px;}
+        .footer .container{border-top:1px solid #ddd;}
+        address span{display:block;font-size:0.75em;font-weight:400;color:#666;}
+        address span:last-child a{color:#666;}
+
+        .footer-box{display:flex;}
+        .footer-logo a img{padding:40px 0 0 0;}
+        .footer-addr{padding:50px;margin-left:30px;}
+        .footer-addr span:nth-child(3){color:blueviolet;}
+
+        .aud-con{padding:50px 0; margin-right: 184px;}
+        .aud-con a{display:block;margin-bottom:20px;font-size:12px;}
+        .sns{padding:48px 5px;margin-left:0;}
+        .sta-sns h4, .kik-sns h4{font-size:12px;}
+        .sns-box{display:flex;}
+        .sns-box a{padding:10px 5px;}
