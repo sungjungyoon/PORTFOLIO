@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-title" content="한솔제지">
+    <meta name="robots" content="한솔제지, 종이, 제지, hansol, paper">
+    <meta name="description" content="대한민국의 제지산업을 이끌어가는 글로벌 리더">
+    <meta property="og:title" content="한솔제지">
+    <meta property="og:url" content="https://pam7464.github.io/hansol/">
+    <meta property="og:image" content="./images/og-image.jpg">
+    <meta property="og:description" content="대한민국의 제지산업을 이끌어가는 글로벌 리더">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="한솔제지">
+    <meta name="twitter:url" content="https://pam7464.github.io/hansol/">
+    <meta name="twitter:image" content="./images/og-image.jpg">
+    <meta name="twitter:description" content="대한민국의 제지산업을 이끌어가는 글로벌 리더">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">    
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+    <title>한솔제지</title>
+
+    <style>
+        
+    </style>    
+</head>
+<body>
+    <div class="skip-menu">
+        <a href="#">제품소개</a>
+        <a href="#">회사소개</a>
+        <a href="#">지속가능경영</a>
+        <a href="#">투자정보</a>
+        <a href="#">인재채용</a>
+        <a href="#">소식</a>
+    </div>
+
+    <div class="pop-up" id="pop-up">
+        <div class="container">
+            <div class="img-box"><img src="./images/img-popup.jpg" alt="가상전시관 바로가기"></div>
+            <form action="#">
+                <input type="checkbox" name="chk-box" id="chk-box">
+                <label for="chk-box">오늘 하루 보지 않음</label>
+            </form>
+            <button type="button" id="btn-close"></button>
+        </div>
+        <script>           
+            if($.cookie('noneLoad') == 'true'){
+                $('#pop-up').css('display','none');
+            }  
+        </script>
+    </div>
+
+    <section class="wrap">
+        <header class="header">
+            <div class="container">
+                <h1 class="main-tit">
+                    <a class="tit-eng" href="./index.html">Hansol</a>
+                    <a class="tit-kr" href="./index.html">한솔제지</a>
+                </h1>
+                <nav class="nav">
+                    <ul class="main-nav">
+                        <li>
+                            <a href="#">제품소개</a>
+                            <ul>
+                                <li><a href="#">인스퍼</a></li>
+                                <li><a href="#">인쇄용지</a></li>
+                                <li><a href="#">산업용지</a></li>
+                                <li><a href="#">특수지</a></li>
+                                <li><a href="#">감열지</a></li>
+                                <li><a href="#">신소재</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">회사소개</a>
+                            <ul>
+                                <li><a href="#">한솔제지</a></li>
+                                <li><a href="#">이념과 비전</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">CEO인사</a></li>
+                                <li><a href="#">문화사업</a></li>
+                                <li><a href="#">사업장 소개</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">지속가능경영</a>
+                            <ul>
+                                <li><a href="#">그린경영</a></li>
+                                <li><a href="#">사회책임경영</a></li>
+                                <li><a href="#">기업지배구조</a></li>
+                                <li><a href="#">자료실</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">투자정보</a>
+                            <ul>
+                                <li><a href="#">재무정보</a></li>
+                                <li><a href="#">공시정보</a></li>
+                                <li><a href="#">배당현황</a></li>
+                                <li><a href="#">전자공고</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">인재채용</a>
+                            <ul>
+                                <li><a href="#">인재상</a></li>
+                                <li><a href="#">인사제도</a></li>
+                                <li><a href="#">채용정보</a></li>                                
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">소식</a>
+                            <ul>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">뉴스</a></li>                                
+                            </ul>
+                        </li>
+                    </ul>                
+                
+                    <ul class="sub-nav">
+                        <li><a href="#">고객문의</a></li>
+                        <li><a href="#">가상전시관</a></li>
+                        <li><a href="#">Eng</a></li>
+                    </ul>
+                </nav>
+                <div class="btn-nav" id="btn-nav">
+                    <div class="btn-line">line</div>
+                    <div class="btn-line">line</div>
+                    <div class="btn-line">line</div>
+                </div>
+            </div>
+        </header>
+        <section class="section main-banner">
+            <div class="container">
+                <h2 class="scnone">매인 배너</h2>
+                <div class="swiper swiper01">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img-box">
+                                <img src="./images/img-main01.jpg" alt="인스퍼">
+                            </div>
+                            <div class="link-slide">
+                                자세히
+                            </div>                            
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-box">
+                                <img src="./images/img-main02.jpg" alt="인쇄용지">
+                            </div>
+                            <div class="link-slide">
+                                자세히
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-box">
+                                <img src="./images/img-main03.jpg" alt="산업용지">
+                            </div>
+                            <div class="link-slide">
+                                자세히
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-box">
+                                <img src="./images/img-main04.jpg" alt="특수지">
+                            </div>
+                            <div class="link-slide">
+                                자세히
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-box">
+                                <img src="./images/img-main05.jpg" alt="감열지">
+                            </div>
+                            <div class="link-slide">
+                                자세히
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-name">
+                        <span>인스퍼</span>
+                        <span>인쇄용지</span>
+                        <span>산업용지</span>
+                        <span>특수용지</span>
+                        <span>감열지</span>
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </div>
+        </section>
+        <section class="section sub-banner">
+            <div class="container">
+                <h2 class="scnone">서브 배너</h2>
+                <div class="swiper swiper02">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="sub-banner-txt">
+                                <p>
+                                    한솔인은 어려움에 부닥치거나 도전을 받으면
+                                    <br>
+                                    철갑을 두른 듯하다는 그 소나무처럼 강철 같은 힘을 발휘한다.
+                                    <br>
+                                    침엽수의 날카로운 잎처럼 예리하고 설세한 적응력으로 응전을 한다.
+                                </p>
+                            </div>
+                            <div class="img-box"><img src="./images/img-sub01.jpg" alt="축사이미지1"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sub-banner-txt">
+                                <p>
+                                    플라스틱이나 금속의 광물질과는 달리
+                                    <br>
+                                    종이는 우리에게 늘 따숩고 정겨운 촉감을 준다.
+                                    <br>
+                                    문방사우의 하나인 이 종이야말로 시와 서화를 담는 꿈의 그릇이 아니겠는가.
+                                </p>
+                            </div>
+                            <div class="img-box"><img src="./images/img-sub02.jpg" alt="축사이미지2"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sub-banner-txt">
+                                <p>
+                                    한솔은 영원한 청년으로
+                                    <br>
+                                    40년의 나이테를 안에 몰래 숨기며
+                                    <br>
+                                    천년을 만년을 향하여 젊게 살아가는 바위 같은 나무다.
+                                </p>
+                            </div>
+                            <div class="img-box"><img src="./images/img-sub03.jpg" alt="축사이미지3"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>                    
+                </div>
+            </div>
+        </section>
+        <section class="section togethor">
+            <div class="container">
+                <h2>
+                    Go togethor
+                    <span>
+                        한솔제지는 
+                        <br>
+                        고객과 함께 성장합니다.
+                    </span>
+                </h2>                
+                <hr>
+                <article class="article">
+                    <h3>
+                        <a href="#">페이퍼넷</a>
+                    </h3>
+                    <div class="btn-right">화살표</div>
+                    <p class="mo">
+                        <a href="#">
+                            한솔제지는 환경 변화와 고객 니즈를 반영한 제품 포트폴리오 강화를 통해
+                            선진 제지기업으로서 최고의 제품을 위해 노력하고 있습니다.
+                        </a>
+                    </p> 
+                    <p class="ta">
+                        <a href="#">
+                            한솔제지는 환경 변화와 고객 니즈를 반영한 제품 포트폴리오 강화를 통해
+                            <br>
+                            선진 제지기업으로서 최고의 제품을 위해 노력하고 있습니다.
+                        </a>
+                    </p>
+                </article>               
+                <hr>
+                <article class="article">
+                    <h3>
+                        <a href="#">
+                            열린구매 시스템
+                        </a>
+                    </h3>
+                    <div class="btn-right">화살표</div>
+                    <p class="mo">
+                        <a href="#">
+                            구매관리, 운송정보, 납품실적관리를 쉽고 평리하게
+                            확인 하실 수 있습니다.
+                        </a>
+                    </p> 
+                    <p class="ta">
+                        <a href="#">
+                            구매관리, 운송정보, 납품실적관리를 쉽고 평리하게
+                            <br>
+                            확인 하실 수 있습니다.
+                        </a>
+                    </p> 
+                </article>               
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <h2 class="footer-tit">
+                    <a class="tit-eng" href="./index.html">Hansol</a>
+                    <a class="tit-kr" href="./index.html">한솔제지</a>
+                </h2>
+                <address class="address">
+                    <p>서울 중구 을지로 100 (을지로2가) 파인애비뉴 B동 23~24층</p>
+                    <p>Copyright 2020. Hansol Paper., Ltd. All rights reserved.</p>
+                </address>                
+                <p class="p-info">
+                    <a href="#">개인정보처리방침</a>
+                </p>
+                <div class="select-box">
+                    <p id="btn-select">Family Site</p>
+                    <ul id="select-list">
+                        <li>한솔그룹</li>
+                        <li>한솔PNS</li>
+                        <li>한솔홈데코</li>
+                        <li>한솔테그닉스</li>
+                        <li>한솔케미컬</li>
+                        <li>한솔EME</li>
+                        <li>한솔로지스틱스</li>
+                        <li>한솔인티큐브</li>
+                        <li>한솔Meseum SAN</li>
+                        <li>한솔페이퍼텍</li>
+                    </ul>
+                    <div class="insta">
+                        <div>인스타</div>
+                    </div>
+                    <div class="face">
+                        <div>f</div>
+                    </div>
+                </div>                
+            </div>
+        </footer>
+    </section>
+    
+    <script src="./js/index-function.js"></script>
+</body>
+</html>
