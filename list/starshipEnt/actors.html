@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-title" content="스타쉽엔터테인먼트">
+    <meta name="robots" content="엔터, 연예인, 가수, starshipEnt, 스타쉽, 기획사">
+    <meta name="description" content="스타쉽 ENT 공식홈페이지">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="스타쉽 ENT">
+    <meta property="og:url" content="http://www.starship-ent.com/">
+    <meta property="og:description" content="스타쉽 ENT 공식홈페이지">
+    <meta property="og:image" content="http://www.starship-ent.com/img/meta_logo.jpg">
+
+    <title>스타쉽엔터테인먼트</title>
+
+    <!-- 스타일 -->
+        <!-- 파비콘 -->
+        <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
+        <!-- 리셋 -->
+    <link rel="stylesheet" href="./css/reset.css">
+        <!-- 스와이프 css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.2.0/swiper-bundle.min.css" integrity="sha512-BYn1UZcpzkgi4cForzUzU/FqsewIcfXDYAU0tThFfehimrUrp5hOtcWPI1Wpli8rKopUIhaDCbxXPttBDTISgA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- 아이콘폰트 폰트아썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/topbanner.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    
+    
+    <!-- 스크립트 -->
+        <!-- 라이브러리 jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- 라이브러리 jquery cookie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- 스와이프 js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.2.0/swiper-bundle.min.js" integrity="sha512-XHnWZWvy5TkCnPgLU7XsWhGAks1JQ3uFutVxRSH0Z4+djsGkCkxVsYu+JgfrDicvbCmjfUf1HeMWYUvUYKgjzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+        .container{width:1080px;margin:0 auto;}
+        /* ---------------------------------------------------------------------- */
+        /* section contents */
+        .company{padding-top:50px;}
+        .date-box{display:flex;flex-flow:row nowrap;}
+        .company h2{font-size:20px;font-weight:600;border-bottom:1px solid black;padding:10px 10px;}
+        .main-list{width:180px;margin-right:40px;}
+        .main-list ul li{border-bottom: 1px solid #ddd;padding:8px 10px;}
+        .main-list ul li a{font-size:14px;font-weight:bold;}
+        .main-list ul li a:hover{color:#ffa300;}
+        .main-contents01{width:80%;margin-bottom:120px;}
+        .header-txt{display:flex;flex-flow:row nowrap;width:860px;border-bottom:1px solid #333;}
+        .header-txt h2{padding-left:0;border:none;}
+        .header-txt p{font-size:13px;align-self:center;}
+        .grey-txt{flex:7;color: #8d8d8d;font-weight:800;}
+        /* ---------------아티스트 스타일----------- */
+        .artist-box{margin-bottom:120px;}
+        .artist-box-grid{display:grid;grid-template-columns:2.5fr 2.5fr 2.5fr 2.5fr;grid-gap:2em;padding-top:2em;}
+        .artist-box-grid li{font-size:15px;font-weight:bold;text-align:center;}
+        .artist-box-grid li a img{margin:5px 0;}
+        .artist-box-grid li:first-child{padding-bottom:25px;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="top-banner" id="top-banner">
+            <div class="banner-sec container">
+                <div class="clk-btn">
+                    <span class="f-span">STARSHIP AUDITON</span>
+                    <span class="s-span">스타쉽 엔터테인먼트와 함께할 미래를 찾습니다.</span>
+                </div>
+                <div class="clo-btn">
+                    <button type="button" id="trigger-01"><span>X</span></button>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="header-sec container">
+                <div class="logo">
+                    <a href="./index.html"><img src="./images/logo.png" alt="indexpage 바로가기"></a>
+                </div>
+                <nav class="main-nav" id="nav-parent">
+                    <ul class="nav-child01" id="nav-child01">
+                        <li><a href="./company.html">COMPANY</a></li>
+                        <li><a href="./artists.html">ARTISTS</a></li>
+                        <li><a href="./actors.html">ACTORS</a></li>
+                        <li><a href="./pr-center.html">PR CENTER</a></li>
+                        <li><a href="./audition.html">AUDITON</a></li>
+                        <li><a href="./starship-square">STARSHIP SQUARE</a></li>
+                    </ul>
+                    <div class="sub-nav" >
+                        <div class="sub-nav-box">
+                            <div class="sub-nav-company">
+                                <h2>COMPANY</h2>
+                                <ul>
+                                    <li><a href="./company.html">회사소개</a></li>
+                                    <li><a href="./company-greeting.html">대표인사말</a></li>
+                                    <li><a href="#">연혁</a></li>
+                                    <li><a href="#">사업현황</a></li>
+                                    <li><a href="#">오시는길</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-artists">
+                                <h2>ARTISTS</h2>
+                                <ul>
+                                    <li><a href="./artists.html">가수</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-actors">
+                                <h2>ACTORS</h2>
+                                <ul>
+                                    <li><a href="./actors.html">배우</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-pr-center">
+                                <h2>PR CENTER</h2>
+                                <ul>
+                                    <li><a href="./pr-center.html">NOTICE</a></li>
+                                    <li><a href="#">MULTIMEDIA</a></li>
+                                    <li><a href="#">NEW RELEASE</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-audition">
+                                <h2>AUDITION</h2>
+                                <ul>
+                                    <li><a href="./audition.html">지원안내</a></li>
+                                    <li><a href="#">지원하기</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-starship-square">
+                                <h2>STARSHIP SQUARE</h2>
+                                <ul>
+                                    <li><a href="#">STARSHIP SQUARE</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="section company">
+            <div class="container">
+                <div class="date-box">
+                    <div class="main-list">
+                        <h2>ARTIST</h2>
+                        <ul>
+                            <li><a href="#">강은아</a></li>
+                            <li><a href="#">김범</a></li>
+                            <li><a href="#">박선</a></li>
+                            <li><a href="#">박희순</a></li>
+                            <li><a href="#">송승헌</a></li>
+                            <li><a href="#">송하윤</a></li>
+                            <li><a href="#">신승호</a></li>
+                            <li><a href="#">신지연</a></li>
+                            <li><a href="#">신현수</a></li>
+                            <li><a href="#">안소요</a></li>
+                            <li><a href="#">오소현</a></li>
+                            <li><a href="#">오아연</a></li>
+                            <li><a href="#">오혜원</a></li>
+                            <li><a href="#">유연석</a></li>
+                            <li><a href="#">이광수</a></li>
+                            <li><a href="#">이다연</a></li>
+                            <li><a href="#">이동욱</a></li>
+                            <li><a href="#">이승헌</a></li>
+                            <li><a href="#">이루비</a></li>
+                            <li><a href="#">이미연</a></li>
+                            <li><a href="#">이종화</a></li>
+                            <li><a href="#">이진</a></li>
+                            <li><a href="#">임수정</a></li>
+                            <li><a href="#">전소민</a></li>
+                            <li><a href="#">정원창</a></li>
+                            <li><a href="#">조윤희</a></li>
+                            <li><a href="#">채수빈</a></li>
+                            <li><a href="#">천영민</a></li>
+                            <li><a href="#">최원명</a></li>
+                            <li><a href="#">최희진</a></li>
+                            <li><a href="#">한민</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-contents01">
+                        <div class="header-txt">
+                            <h2>배우</h2>
+                            <p class="grey-txt">ACTORS</p>
+                            <p>HOME</p>
+                            <p> > ACTORS</p>
+                        </div>
+                        <div class="artist-box">
+                            <ul class="artist-box-grid">
+                                <li><a href="#"><img src="./images/p_kangeuna.jpg" alt="">강은아</a></li>
+                                <li><a href="#"><img src="./images/p_kimbeom.jpg" alt="">김범</a></li>
+                                <li><a href="#"><img src="./images/p_parksun.jpg" alt="">박선</a></li>
+                                <li><a href="#"><img src="./images/p_parkheesoon.jpg" alt="">박희순</a></li>
+                                <li><a href="#"><img src="./images/p_songseungheon.jpg" alt="">송승헌</a></li>
+                                <li><a href="#"><img src="./images/p_songhayoon.jpg" alt="">송하윤</a></li>
+                                <li><a href="#"><img src="./images/p_shinseungho.jpg" alt="">신승호</a></li>
+                                <li><a href="#"><img src="./images/p_shinjiyeon.jpg" alt="">신지연</a></li>
+                                <li><a href="#"><img src="./images/p_shinhyunsoo.jpg" alt="">신현수</a></li>
+                                <li><a href="#"><img src="./images/p_ahnsoyo.jpg" alt="">안소요</a></li>
+                                <li><a href="#"><img src="./images/p_ohsohyun.jpg" alt="">오소현</a></li>
+                                <li><a href="#"><img src="./images/p_ohahyeon.jpg" alt="">오아연</a></li>
+                                <li><a href="#"><img src="./images/p_ohhyewon.jpg" alt="">오혜원</a></li>
+                                <li><a href="#"><img src="./images/p_yooyeonseok.jpg" alt="">유연석</a></li>
+                                <li><a href="#"><img src="./images/p_leekwangsoo.jpg" alt="">이광수</a></li>
+                                <li><a href="#"><img src="./images/p_leesumin.jpg" alt="">이다연</a></li>
+                                <li><a href="#"><img src="./images/p_leedongwook.jpg" alt="">이동욱</a></li>
+                                <li><a href="#"><img src="./images/p_leeseunghun.jpg" alt="">이승헌</a></li>
+                                <li><a href="#"><img src="./images/p_leeruby.jpg" alt="">이루비</a></li>
+                                <li><a href="#"><img src="./images/p_leemeyeon.jpg" alt="">이미연</a></li>
+                                <li><a href="#"><img src="./images/p_leejonghwa.jpg" alt="">이종화</a></li>
+                                <li><a href="#"><img src="./images/p_leejin.jpg" alt="">이진</a></li>
+                                <li><a href="#"><img src="./images/p_limsoojung.jpg" alt="">임수정</a></li>
+                                <li><a href="#"><img src="./images/p_jeonsomin.jpg" alt="">전소민</a></li>
+                                <li><a href="#"><img src="./images/p_jungwonchang.jpg" alt="">정원창</a></li>
+                                <li><a href="#"><img src="./images/p_choyoonhee.jpg" alt="">조윤희</a></li>
+                                <li><a href="#"><img src="./images/p_soobin.jpg" alt="">채수빈</a></li>
+                                <li><a href="#"><img src="./images/p_youngmin.jpg" alt="">천영민</a></li>
+                                <li><a href="#"><img src="./images/p_choiwonmyeong.jpg" alt="">최원명</a></li>
+                                <li><a href="#"><img src="./images/p_choiheejin.jpg" alt="">최희진</a></li>
+                                <li><a href="#"><img src="./images/p_hanmin.jpg" alt="">한민</a></li>  
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-box">
+                    <div class="footer-logo">
+                    <a href="./index.html"><img src="./images/footer-logo.png" alt="index page 바로가기"></a>
+                    </div>
+                    <address class="footer-addr">
+                        <span>서울시 강남구 삼성로146길 4-5스타쉽ENT(06070)</span>
+                        <span>4-5, Samseong-ro 146-gil, Gangnam-gu, Seoul</span><br>
+                        <span>스타쉽ENT의 모든 컨텐츠는 저작권의 보호를 받고 있습니다.</span><br>
+                        <span>Copyright STARSHIP ENT all rights Reserved.</span><br>
+                        <span><a href="#">Mobile Ver</a></span>
+                    </address>
+                    <div class="aud-con">
+                        <a href="./audition.html">AUDITION</a>
+                        <a href="#">CONTACT</a>
+                    </div>
+                    <div class="sns">
+                        <div class="sta-sns">
+                            <h4>STARSHIP</h4>
+                            <div class="sns-box">
+                                <a href=""><img src="./images/footer-v-log.png" alt="브이로그 바로가기"></a>
+                                <a href=""><img src="./images/footer-naver-media.png" alt="미디어 바로가기"></a>
+                                <a href=""><img src="./images/footer-facebook.png" alt="페이스북 바로가기"></a>
+                                <a href=""><img src="./images/footer-twitter.png" alt="트위터 바로가기"></a>
+                                <a href=""><img src="./images/footer-youtube.png" alt="유튜브 바로가기"></a>
+                                <a href=""><img src="./images/footer-instagram.png" alt="인스타 바로가기"></a>
+                                <a href=""><img src="./images/footer-naver-bookmark.png" alt="네이버북 바로가기"></a>
+                            </div>
+                        </div>
+                        <div class="kik-sns">
+                            <h4>KINGKONG by STARSHIP</h4>
+                            <div class="sns-box">
+                                <a href="#"><img src="./images/footer-v-log.png" alt="브이로그 바로가기"></img></a>
+                                <a href="#"><img src="./images/footer-naver-media.png" alt="네이버 미디어 바로가기"></img></a>
+                                <a href="#"><img src="./images/footer-facebook.png" alt="페이스북 바로가기"></img></a>
+                                <a href="#"><img src="./images/footer-instagram.png" alt="인스타그램 바로가기"></img></a>
+                                <a href="#"><img src="./images/footer-youtube.png" alt="유튜브 바로가기"></img></a>
+                                <a href="#"><img src="./images/footer-weibo.png" alt="웨이보 바로가기"></img></a>
+                                <a href="#"><img src="./images/footer-naver-bookmark.png" alt="네이버북 바로가기"></img></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        $(function(){
+            // 탑베너 닫기 이벤트
+            $('#trigger-01').on({
+                'click':function(){
+                    $('#top-banner').slideToggle();
+                }
+            })
+            // -------main-nav 마우스 호버 이벤트
+            // $('#nav-child01').on({
+            //     'mouseover':function(){
+            //         $('#sub-nav-box').slideDown();
+            //     }
+            // })
+            // $('#nav-child01').on({
+            //     'mouseout':function(){
+            //         $('#sub-nav-box').slideUp(1);
+            //     }
+            // })
+            // $(this).on({
+            //     'mouseleave':function(){
+            //         $('#sub-nav-box').slideup();
+            //     }
+            // })
+            // $('#com-even').on({
+            //     'mouseleave':function(){
+            //         $('#sub-nav-box').css('display','none');
+            //     }
+            // })
+
+    // --------------swiper default
+            var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },            
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: 'true',
+                },
+                autoplay: {
+                    delay: 3000,
+                    },
+            });
+            
+        })
+    </script>
+    
+</body>
+</html>

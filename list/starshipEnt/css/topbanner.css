@@ -1,0 +1,13 @@
+@charset 'utf-8';
+        /* top-banner */
+        .top-banner{height:100px;background-color:orange;position: relative;}
+        .banner-sec{height:100px;display:flex;justify-content:center;align-items:center;}
+        .clk-btn{display: flex;}
+        .f-span,.s-span{color:white;padding:10px;}
+        .f-span{font-weight:800;font-size:26px;}
+        .s-span{margin-top:8px;}
+        .clo-btn button{position:absolute;color:white;font-size:1.8em;font-weight:300;
+            right:2%;top:10px;background-color:transparent;}
+
+        /* 이벤트 버튼 */
+        #trigger-01{cursor: pointer;}
