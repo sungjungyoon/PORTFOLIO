@@ -1,0 +1,94 @@
+@charset 'utf-8';
+
+/* main banner style */
+.main-banner .container{padding-top:0;}
+.main-banner .sec-title{overflow:hidden;height:0;margin-bottom:0;}
+.swiper-pagination-bullet{width:10px;height:10px;background-color:rgba(63, 81, 181,0.7);}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{background-color:#3f51b5;}
+
+/* we are style */
+.we-are .container{display:flex;flex-flow:row wrap;justify-content:center;}        
+.we-are .sec-contents{margin-bottom:50px;}
+.we-are .sec-contents.we-link{width:100%;margin-bottom:26px;padding:0 12%;}
+.we-are .sec-txt,.we-are .img-box,.we-are .sec-sub-title,.we-are .sec-sub-txt{text-align:center;}
+.we-are .sec-txt,.we-are .sec-sub-txt a{font-weight:300;font-size:12px;color:#666;}
+.we-are .img-box a{font-size:60px;color:#3f51b5;}
+.we-are .sec-sub-title a{font-weight:300;font-size:18px;color:#3f51b5;}
+
+/* work style */
+.work .container{padding:80px 0;display:flex;flex-flow:row wrap;}        
+.work .sec-title,.work .sec-contents{width:100%;text-align:center;}
+.work .sec-contents{position:relative;overflow:hidden;}
+.work .sec-contents .background{position:absolute;left:0;right:0;top:0;bottom:0;background-color:rgba(63, 81, 181,0.6);text-indent:-9999px;background-color:rgba(63, 81, 181,0);transition:0.3s;}
+.work .sec-contents:hover .background{background-color:rgba(63, 81, 181,0.8);}
+.work .sec-contents .sec-text{position:absolute;left:0;right:0;top:0;bottom:0;padding:1em;transform:translateY(-100%);transition:0.3s;}
+.work .sec-contents:hover .sec-text{transform:translateY(0);}
+.work .sec-sub-title,.work .sec-sub-txt{font-size:1.2em;color:#fff;text-align:left;}
+.work .sec-sub-txt{font-size:1em;}
+
+/* blog style */
+.blog .container{display:flex;flex-flow:row wrap;justify-content:space-between;}
+.blog .sec-title, .blog .sec-contents{width:100%;}
+.blog .sec-contents{margin-bottom:50px;}
+.blog .sec-contents:last-child{margin-bottom:0;}
+.blog .img-box{margin-bottom:10px;}
+.blog .sec-sub-title{font-weight:300;font-size:0.9em;color:#aaa;margin-bottom:20px;}
+.blog .sec-sub-txt{font-weight:300;color:#333;}
+
+/* contact style */
+.contact .container{display:flex;flex-flow:row wrap;justify-content:space-between;}
+.contact .container>*{width:100%;}
+form{display:flex;flex-flow:column wrap;justify-content:flex-start;align-content:space-between;}
+form>*{width:100%;margin:10px 0;}
+form input[type='text'],form textarea{border-bottom:1px solid #666;padding:16px 0;}
+form *::placeholder{color:#3f51b5;font-size:14px;}
+form input[type='submit']{width:119px;height:44px;background-color:#3f51b5;color:#fff;align-self:flex-end;}
+
+/* map style */
+.map .sec-title{overflow:hidden;height:0;margin-bottom:0;}
+.map iframe{width:100%;height:60vw;}
+
+@media (min-width:768px){
+    /* we are style */
+    .we-are .container{justify-content:space-between;}
+    .we-are .sec-contents{margin-bottom:100px;}
+    .we-are .sec-contents.we-link{width:23%;padding:0;}
+
+    /* work style */
+    .work .container{padding:100px 0;} 
+    .work .sec-contents{width:50%;text-align:center;} 
+    
+    /* blog style */
+    .blog .sec-contents{width:32%;}
+    .blog .sec-contents{margin-bottom:0;}
+
+    /* contact style */
+    form{height:270px;}
+    form>*{width:49%;}
+
+    /* map style */
+    .map iframe{height:50vw;}    
+}
+
+@media (min-width:1200px){
+    /* we are style */
+    .we-are .sec-title{width:40%;text-align:left;position:relative;}
+    .we-are .sec-title::after{content:'';display:block;width:2px;height:54px;background-color:#e0e0e0;position:absolute;right:14px;top:0;}
+    .we-are .sec-contents{width:60%;}
+    .we-are .sec-txt{text-align:left;}
+
+    /* work style */
+    .work .sec-contents{width:25%;text-align:center;}
+    .work .sec-title{text-align:left;padding-left:60px;}       
+
+    /* blog style */
+    .blog .sec-title, .blog .sec-contents{width:24%;}
+    .blog .sec-title{text-align:left;}
+
+    /* contact style */
+    .contact .container .sec-title{width:24%;text-align:left;}
+    .contact .container .sec-contents{width:74%;}
+
+    /* map style */
+    .map iframe{height:40vw;}
+}
