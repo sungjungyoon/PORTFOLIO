@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 제작자 -->
+  <meta name="author" content="hong">
+  <!-- 설명 -->
+  <meta name="description" content="여행을 떠나고 싶을때는 언제나 TOURIST와 함께">
+  <!-- 키워드 -->
+  <meta name="keywords" content="여행,국내여행,해외여행,신혼여행,효도관광,당일여행,기차여행,섬여행,섬,기차,비행기,예매,호텔,모텔,팬션">
+  <!-- 링크공유 -->
+  <meta property="og:url" content="https://pam7462.github.io/tour/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="tourist">
+  <meta property="og:image" content="images/sns_img.png">
+  <meta property="og:description" content="여행을 떠나고 싶을때는 언제나 TOURIST와 함께">
+  <!-- 익스플로러 -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- 타이틀 -->
+  <title>투어리스트</title>
+
+  <!-- 스타일 -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <!-- 사용자 스타일 -->
+  <link rel="stylesheet" href="css/ui.css">
+  <link rel="stylesheet" href="css/sub_ui.css">
+  <link rel="stylesheet" href="css/notice.css">
+
+
+  <!-- 스크립트 -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/smooth-scroll.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/prefixfree.min.js"></script>
+  <!-- 주석조건문 -->
+  <!-- [if lte IE 8]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/placeholders.min.js"></script>
+  <![endif] -->
+
+  <!-- 사용자 스크립트 -->
+  <script src="js/ui.js"></script>
+</head>
+<body>
+  <div class="skip"><a data-scroll href="#content">본문 바로가기</a></div>
+  <div class="pos_fix">
+    <ul class="clearfix">
+      <li class="float_left"><a href="tel:02-444-4444">전화문의</a></li>
+      <li class="float_left"><a href="#" onclick="return false;" id="kakao">카카오톡 상담</a></li>
+      <li class="float_left"><a href="#" onclick="return false;">오시는 길</a></li>      
+    </ul>
+    <p><a data-scroll href="#header">TOP</a></p>
+  </div>
+  <div class="wrap">
+    <header id="header">
+      <div class="content clearfix">
+        <div class="tgl_btn float_left">
+          <p>토글버튼</p>
+        </div>
+        <div class="logo_box float_left">
+          <a href="index.html">
+            <img src="images/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="nav_box float_right">
+          <ul class="login_join clearfix">
+            <li class="float_left"><a href="mypage.html">마이페이지</a></li>
+            <li class="float_left"><a href="login.html" target="_black">로그아웃</a></li>
+          </ul>
+          <nav class="nav">
+            <ul class="main_nav clearfix">
+              <li class="float_left">
+                <a href="#">여행정보</a>
+                <ul class="sub_nav clearfix">
+                  <li class="float_left"><a href="#">국내</a></li>
+                  <li class="float_left"><a href="#">해외</a></li>
+                </ul>
+              </li>
+              <li class="float_left">
+                <a href="notice.html">고객센터</a>
+                <ul class="sub_nav clearfix">
+                  <li class="float_left"><a href="notice.html">공지사항</a></li>
+                  <li class="float_left"><a href="#">문의하기</a></li>
+                </ul>
+              </li>
+              <li class="float_left">
+                <a href="program.html">상품투어</a>
+                <ul class="sub_nav clearfix">
+                  <li class="float_left"><a href="program.html">프로그램 소개</a></li>
+                  <li class="float_left"><a href="#">여행자료</a></li>
+                </ul>
+              </li>
+              <li class="float_left">
+                <a href="#">티켓/가이드</a>
+                <ul class="sub_nav clearfix">
+                  <li class="float_left"><a href="#">항공</a></li>
+                  <li class="float_left"><a href="#">호텔</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    
+    <section class="sec_top">
+      <div class="content">
+        <h2>TOURIST in TOUR</h2>
+        <hr>
+        <p>MYPAGE / 개인 정보 수정</p>
+      </div>
+    </section>
+    <section class="sec_form">
+      <div class="content">
+        <div class="search_box">
+          <input type="text" name="search_txt" id="search" placeholder="검색어를 입력 해주세요">
+          <button type="button">검색</button>
+        </div>
+        <div class="notice_list_box">
+          <ul>
+            <li class="clearfix">
+              <div class="first_li">
+                <h4>번호</h4>
+              </div>
+              <div class="second_li">
+                <h4>제목</h4>
+              </div>
+              <div class="third_li">
+                <h4>조회수</h4>
+              </div>
+              <div class="last_li">
+                <h4>작성일</h4>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div class="first_li">
+                <p>1</p>
+              </div>
+              <div class="second_li">
+                <p>이번 여름 휴가 제주 갈까? 미션 투어 (여행경비 50만원 지원)</p>
+              </div>
+              <div class="third_li">
+                <p>123</p>
+              </div>
+              <div class="last_li">
+                <p>2020-01-01</p>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div class="first_li">
+                <p>2</p>
+              </div>
+              <div class="second_li">
+                <p>박물관 미션 투어 응모 당첨자 발표</p>
+              </div>
+              <div class="third_li">
+                <p>123</p>
+              </div>
+              <div class="last_li">
+                <p>2020-01-03</p>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div class="first_li">
+                <p>3</p>
+              </div>
+              <div class="second_li">
+                <p>추석 연휴 티켓/투어 배송 및 직접 수령 안내</p>
+              </div>
+              <div class="third_li">
+                <p>123</p>
+              </div>
+              <div class="last_li">
+                <p>2020-01-05</p>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div class="first_li">
+                <p>4</p>
+              </div>
+              <div class="second_li">
+                <p>하롱베이 서비스 OPEN! (여행정보, 가이드북, 가이드맵)</p>
+              </div>
+              <div class="third_li">
+                <p>123</p>
+              </div>
+              <div class="last_li">
+                <p>2020-01-07</p>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div class="first_li">
+                <p>5</p>
+              </div>
+              <div class="second_li">
+                <p>투어리스트인투어 서비스 점검 안내 - 투어리스트인투어에서 매월 실시하는 정기점검 안내</p>
+              </div>
+              <div class="third_li">
+                <p>123</p>
+              </div>
+              <div class="last_li">
+                <p>2020-01-11</p>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div class="first_li">
+                <p>6</p>
+              </div>
+              <div class="second_li">
+                <p>이번 여름 휴가 제주 갈까? 미션 투어2 (여행경비 150만원 지원)</p>
+              </div>
+              <div class="third_li">
+                <p>123</p>
+              </div>
+              <div class="last_li">
+                <p>2020-01-15</p>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div class="first_li">
+                <p>7</p>
+              </div>
+              <div class="second_li">
+                <p>박물관 미션 투어 응모 당첨자 발표</p>
+              </div>
+              <div class="third_li">
+                <p>123</p>
+              </div>
+              <div class="last_li">
+                <p>2020-01-18</p>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div class="first_li">
+                <p>8</p>
+              </div>
+              <div class="second_li">
+                <p>투어리스트인투어 서비스 점검 안내 - 투어리스트인투어에서 매월 실시하는 정기점검 안내</p>
+              </div>
+              <div class="third_li">
+                <p>123</p>
+              </div>
+              <div class="last_li">
+                <p>2020-01-20</p>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div class="first_li">
+                <p>9</p>
+              </div>
+              <div class="second_li">
+                <p>추석 연휴 티켓/투어 배송 및 직접 수령 안내</p>
+              </div>
+              <div class="third_li">
+                <p>123</p>
+              </div>
+              <div class="last_li">
+                <p>2020-01-26</p>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div class="first_li">
+                <p>10</p>
+              </div>
+              <div class="second_li">
+                <p>추석 연휴 티켓/투어 배송 및 직접 수령 안내</p>
+              </div>
+              <div class="third_li">
+                <p>123</p>
+              </div>
+              <div class="last_li">
+                <p>2020-01-30</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="notice_index">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="images/btn_firstpage.png" alt="firstpage">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/btn_prevpage.png" alt="prevpage">
+              </a>
+            </li>
+            <li><a href="#" class="index_num first_index">1</a></li>
+            <li><a href="#" class="index_num">2</a></li>
+            <li><a href="#" class="index_num">3</a></li>
+            <li><a href="#" class="index_num">4</a></li>
+            <li><a href="#" class="index_num">5</a></li>
+            <li>
+              <a href="#">
+                <img src="images/btn_nextpage.png" alt="nextpage">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/btn_lastpage.png" alt="lastpage">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="content">
+        <ul class="clearfix">
+          <li class="float_left">
+            <h5>
+              <span>
+                <a href="#" class="right_border">이용약관</a>
+              </span>
+              <span>
+                <a href="#">개인정보처리방침</a>
+              </span>
+            </h5>
+            <p>
+              투어리스트인투어<br>
+              서울특별시 종로구 혜화동 9길 청운빌딩 5층 / 대표전화 02-1234-5678 / E-mail : titour@touristintour.com<br>            
+              Copyright(c) TouristInTour all right reserved
+            </p>
+          </li>
+          <li class="float_right">
+            <a href="#">
+              <img src="images/blog_img.png" alt="blog">
+            </a>
+            <a href="#">
+              <img src="images/face_img.png" alt="face">
+            </a>
+            <a href="#">
+              <img src="images/insta_img.png" alt="insta">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

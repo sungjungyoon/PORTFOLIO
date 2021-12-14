@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 제작자 -->
+  <meta name="author" content="hong">
+  <!-- 설명 -->
+  <meta name="description" content="여행을 떠나고 싶을때는 언제나 TOURIST와 함께">
+  <!-- 키워드 -->
+  <meta name="keywords" content="여행,국내여행,해외여행,신혼여행,효도관광,당일여행,기차여행,섬여행,섬,기차,비행기,예매,호텔,모텔,팬션">
+  <!-- 링크공유 -->
+  <meta property="og:url" content="https://pam7462.github.io/tour/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="tourist">
+  <meta property="og:image" content="images/sns_img.png">
+  <meta property="og:description" content="여행을 떠나고 싶을때는 언제나 TOURIST와 함께">
+  <!-- 익스플로러 -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- 타이틀 -->
+  <title>투어리스트</title>
+
+  <!-- 스타일 -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <!-- 사용자 스타일 -->
+  <link rel="stylesheet" href="css/ui.css">
+
+  <!-- 스크립트 -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/smooth-scroll.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/prefixfree.min.js"></script>
+  <!-- 주석조건문 -->
+  <!-- [if lte IE 8]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/placeholders.min.js"></script>
+  <![endif] -->
+
+  <!-- 사용자 스크립트 -->
+  <script src="js/ui.js"></script>
+</head>
+<body>
+  <div class="skip"><a data-scroll href="#content">본문 바로가기</a></div>
+  <div class="pos_fix">
+    <ul class="clearfix">
+      <li class="float_left"><a href="tel:02-444-4444">전화문의</a></li>
+      <li class="float_left"><a href="#" onclick="return false;" id="kakao">카카오톡 상담</a></li>
+      <li class="float_left"><a href="#" onclick="return false;">오시는 길</a></li>      
+    </ul>
+    <p><a data-scroll href="#header">TOP</a></p>
+  </div>
+  <div class="wrap">
+    <header id="header">
+      <div class="content clearfix">
+        <div class="tgl_btn float_left">
+          <p>토글버튼</p>
+        </div>
+        <div class="logo_box float_left">
+          <a href="index.html">
+            <img src="images/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="nav_box float_right">
+          <ul class="login_join clearfix">
+            <li class="float_left"><a href="login.html" target="_blank">로그인</a></li>
+            <li class="float_left"><a href="join.html">회원가입</a></li>
+          </ul>
+          <nav class="nav">
+            <ul class="main_nav clearfix">
+              <li class="float_left">
+                <a href="#">여행정보</a>
+                <ul class="sub_nav clearfix">
+                  <li class="float_left"><a href="#">국내</a></li>
+                  <li class="float_left"><a href="#">해외</a></li>
+                </ul>
+              </li>
+              <li class="float_left">
+                <a href="notice.html">고객센터</a>
+                <ul class="sub_nav clearfix">
+                  <li class="float_left"><a href="notice.html">공지사항</a></li>
+                  <li class="float_left"><a href="#">문의하기</a></li>
+                </ul>
+              </li>
+              <li class="float_left">
+                <a href="program.html">상품투어</a>
+                <ul class="sub_nav clearfix">
+                  <li class="float_left"><a href="program.html">프로그램 소개</a></li>
+                  <li class="float_left"><a href="#">여행자료</a></li>
+                </ul>
+              </li>
+              <li class="float_left">
+                <a href="#">티켓/가이드</a>
+                <ul class="sub_nav clearfix">
+                  <li class="float_left"><a href="#">항공</a></li>
+                  <li class="float_left"><a href="#">호텔</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="main_banner">
+      <div class="swiper-container mo_banner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="mo_slide_box">
+              <img src="images/mo_mainslide01.jpg" alt="모바일 슬라이더">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="mo_slide_box">
+              <img src="images/mo_mainslide02.jpg" alt="모바일 슬라이더">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="mo_slide_box">
+              <img src="images/mo_mainslide03.jpg" alt="모바일 슬라이더">
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="swiper-container tab_banner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="tab_slide_box">
+              <div class="tab_slide_img">
+                <img src="images/mainslide01.jpg" alt="mainslide01">
+              </div>
+              <div class="tab_slide_txt_img">
+                <img src="images/slider_txt_img1.png" alt="slider_txt">
+              </div>
+              <div class="tab_slide_over_txt">
+                <p>BE TOURIST FOR BETTER LIFE</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="tab_slide_box">
+              <div class="tab_slide_img">
+                <img src="images/mainslide02.jpg" alt="mainslide01">
+              </div>
+              <div class="tab_slide_txt_img">
+                <img src="images/slider_txt_img1.png" alt="slider_txt">
+              </div>
+              <div class="tab_slide_over_txt">
+                <p>BE TOURIST FOR BETTER LIFE</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="tab_slide_box">
+              <div class="tab_slide_img">
+                <img src="images/mainslide03.jpg" alt="mainslide01">
+              </div>
+              <div class="tab_slide_txt_img">
+                <img src="images/slider_txt_img1.png" alt="slider_txt">
+              </div>
+              <div class="tab_slide_over_txt">
+                <p>BE TOURIST FOR BETTER LIFE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination">
+          <span class="swiper-pagination-bullet"></span>
+          <span class="swiper-pagination-bullet"></span>
+          <span class="swiper-pagination-bullet"></span>
+          <p class="stop">
+            <img src="images/stop.png" alt="멈춤">
+          </p>
+          <p class="play">
+            <img src="images/play.png" alt="재생">
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="topplace" id="content">
+      <div class="content">
+        <h2>다시 찾는 인기 여행지 <span>TOP3</span></h2>
+        <ul class="top3 clearfix">
+          <li class="float_left">
+            <img src="images/topplace_img01.jpg" alt="top01">
+            <h3>성패트릭 대성당</h3>
+            <p>바쁜 뉴욕 안에서 정교하면서도 웅장한 기운에 침묵하게 되는 기도의 시간!</p>
+            <p><a href="#">VIEW</a></p>
+          </li>
+          <li class="float_left">
+            <img src="images/topplace_img02.jpg" alt="top01">
+            <h3>원주 뮤지엄'산'</h3>
+            <p>전시된 유산들을 담아낸 건물에 신비로운 돌과 물의 테마가 담겨 있다.</p>
+            <p><a href="#">VIEW</a></p>
+          </li>
+          <li class="float_left">
+            <img src="images/topplace_img03.jpg" alt="top01">
+            <h3>일본 만국박람회 기념공원</h3>
+            <p>오사카 센리 반파쿠에는 드넓은 대지에 정원과 들, 물과 함께 하는 문화가 있다.</p>
+            <p><a href="#">VIEW</a></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="notice">
+      <div class="content">
+        <ul class="notice_box clearfix">
+          <li class="float_left pc_g8">
+            <div class="kakao_box">
+              <img src="images/kakao_img.png" alt="kakao">
+              <h4>카카오톡 1:1 상담</4>
+            </div>
+            <div class="tel_box">
+              <img src="images/phone_img.png" alt="phone">
+              <h4>전화 상담 신청</h4>
+            </div>
+          </li>
+          <li class="float_right">
+            <h4>NOTICE</h4>
+            <ul>
+              <li><a href="notice.html">이번 여름 휴가 제주갈까?</a></li>
+              <li><a href="notice.html">지난 여름 휴가 강원도</a></li>
+              <li><a href="notice.html">포스트 코로나를 준비한다</a></li>
+              <li><a href="notice.html">이시국에 해외보단 국내로</a></li>
+              <li><a href="notice.html">콜라먹고 가자! 바다로!</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <div class="content">
+        <ul class="clearfix">
+          <li class="float_left">
+            <h5>
+              <span>
+                <a href="#" class="right_border">이용약관</a>
+              </span>
+              <span>
+                <a href="#">개인정보처리방침</a>
+              </span>
+            </h5>
+            <p>
+              투어리스트인투어<br>
+              서울특별시 종로구 혜화동 9길 청운빌딩 5층 / 대표전화 02-1234-5678 / E-mail : titour@touristintour.com<br>            
+              Copyright(c) TouristInTour all right reserved
+            </p>
+          </li>
+          <li class="float_right">
+            <a href="#">
+              <img src="images/blog_img.png" alt="blog">
+            </a>
+            <a href="#">
+              <img src="images/face_img.png" alt="face">
+            </a>
+            <a href="#">
+              <img src="images/insta_img.png" alt="insta">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+@charset 'utf-8';
+
+.sec_form .tit_label{
+  display:inline-block;
+  width:100%;
+  font-size:1.2em;
+}
+.sec_form .must::before{
+  content:'*';
+  display:inline-block;
+  color:#ff0000;
+  width:1em;
+}
+.sec_form h3{
+  color:#ff0000;
+}
+.sec_form hr{
+  width:100%;
+  height:1px;
+  background-color:gray;
+  margin:20px 0;
+}
+.sec_form input,
+textarea{
+  border:1px solid gray;
+  padding:6px 10px;
+  width:100%;
+}
+#e-mail,
+#e-server{
+  width:140px;
+}
+#e-mail::after{
+  content:'@';
+  display:inline-block;
+}
+.sec_form input[type="radio"],
+.sec_form input[type="checkbox"]{
+  width:auto;
+}
+.button_box{
+  padding-top:30px;
+  text-align:center;
+}
+button{
+  border:1px solid turquoise;
+  padding:10px 20px;
+  font-weight:bold;
+  font-size:1.6em;
+  background-color:darkblue;
+  color:#ffffff;
+  cursor:pointer;
+}
+button:hover{
+  border:1px solid darkblue;
+  background-color:#ffffff;
+  color:darkblue;
+}
+
+
+@media (min-width:801px){
+  .sec_top{
+  
+  }
+  .sec_form .tit_label{
+    width:16%;
+  }
+  .sec_form input,
+  textarea{
+    width:80%;
+  }
+  .sec_form .no_must{
+    padding-left:1em;
+  }
+}

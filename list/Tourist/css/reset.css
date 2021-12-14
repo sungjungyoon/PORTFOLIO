@@ -1,0 +1,18 @@
+@charset 'utf-8';
+
+html,body,header,section,article,nav,footer,
+aside,address,div,span,a,ul,ol,li,dl,dt,dd,
+img,input,select,button,i,strong,u,hr,picture,
+audio,video,iframe,form,fieldset,figure,figcaption,
+h1,h2,h3,h4,h5,h6,p{
+  margin:0;border:none;padding:0;font-size:14px;color:#444;
+}
+a{
+  text-decoration:none;
+}
+img{
+  vertical-align:bottom;
+}
+ul,ol,li{
+  list-style:none;
+}
