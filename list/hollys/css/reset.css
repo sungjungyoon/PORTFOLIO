@@ -1,0 +1,30 @@
+@charset 'utf-8';
+
+html,body,div,span,ol,ul,li,input,form,label,
+select,button,h1,h2,h3,h4,h5,h6,p,table,tr,td,img,a,iframe,strong,
+section,header,footer,nav,address,main,picture,video,audio,figure,
+figcaption,article,::before,::after{
+    box-sizing:border-box;
+    margin:0;
+    border:none;
+    padding:0;
+}
+img{
+    vertical-align:bottom;
+}
+a{
+    color:#000;
+    text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size:1em;
+    font-weight:400;
+}
+ul,ol,li{
+    list-style:none;
+}
+.clearfix::after{
+    content:'';
+    display:block;
+    clear:both;
+}
