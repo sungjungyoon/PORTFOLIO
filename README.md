@@ -10,7 +10,7 @@ Hello! Simple clone coding and portfolio production
 ## MY Projects/list
 
  - [sungjungyoon's Portfolio - (html, css project)](https://github.com/sungjungyoon/)
- -  https://sungjungyoon.github.io/PORTFOLIO/
+ -  https://sungjungyoon.github.io/PORTFOLIO/d
  -  
  
   
