@@ -1,4 +1,4 @@
-# One page Portfolio Website (HTML CSS Project for Ppractice)
+#Portfolio Website (HTML CSS Project for practice)
 
 
  ![black-and-white-g627ece5a3_1920](https://user-images.githubusercontent.com/87048278/146387477-b213b954-af65-4e34-90e6-8232a28a20cf.jpg)
